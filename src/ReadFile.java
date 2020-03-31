@@ -16,13 +16,41 @@ import java.util.*;
 public class ReadFile {
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println("\nTEST PROGRAM:\n");
-        String small = "GEBCO_Small/gebco_2019_n40.005_s40.0_w-57.22_e-57.215.asc";
-        String medium = "GEBCO_Medium/gebco_2019_n26.0_s25.0_w-22.0_e-21.0.asc";
-        String large = "GEBCO_Large/gebco_2019_n27.0_s25.0_w-22.0_e-20.0.asc";
+        String small = "GEBCO_174bytes/gebco_2019_n40.005_s40.0_w-57.22_e-57.215.asc";
+        String medium = "GEBCO_980kb/gebco_2019_n26.0_s25.0_w-22.0_e-21.0.asc";
+        String large = "GEBCO_4mb/gebco_2019_n27.0_s25.0_w-22.0_e-20.0.asc";
+        String extraLarge = "GEBCO_24mb/gebco_2019_n20.0_s15.0_w135.0_e140.0.asc";
+        String extraExtraLarge = "GEBCO_885mb/gebco_2019_n90.0_s-90.0_w-45.0_e-40.0.asc";
 
         Scanner kb = new Scanner(System.in);
 
-        File file = new File(large);//change this to try different files
+        System.out.println("Choose a data set");
+        System.out.println("1-174 bytes\n2-980 kb\n3-4 mb\n4-24 mb\n5-885 mb");
+        String chosenFile = null;
+        int option = kb.nextInt();
+
+        if(option==1){
+            chosenFile=small;
+        }
+        else if(option==2){
+            chosenFile=medium;
+        }
+        else if(option==3){
+            chosenFile=large;
+        }
+        else if(option==4){
+            chosenFile=extraLarge;
+        }
+        else if(option==5){
+            chosenFile=extraExtraLarge;
+        }
+        else{
+
+        }
+
+        System.out.println("Processing...");
+
+        File file = new File(chosenFile);//change this to try different files
         Scanner inputFile = new Scanner(file);
         
         LinkedList dataList = new LinkedList();
@@ -36,10 +64,7 @@ public class ReadFile {
         int gridCount=0;
         inputFile.nextLine();
         inputFile.nextLine();
-
-        //latitude=inputFile.nextDouble();
         inputFile.nextLine();
-
         inputFile.nextLine();
         inputFile.nextLine();
         inputFile.nextLine();

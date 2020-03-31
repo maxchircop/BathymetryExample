@@ -15,6 +15,6 @@ public class Data {
     }
 
     public String toString(){
-        return latitude+" & "+longitude+" has a depth of "+depth;
+        return "Latitude "+latitude+" & longitude "+longitude+" has a depth of "+depth+" meters";
     }
 }

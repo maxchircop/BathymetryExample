@@ -54,7 +54,7 @@ public class LinkedList<T>
 
         while (curr!=null)
         {
-            System.out.print(curr.getData() + "\n>");
+            System.out.print(curr.getData() + "\n");
             curr = curr.getNext();
         }
 

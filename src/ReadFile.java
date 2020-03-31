@@ -22,7 +22,7 @@ public class ReadFile {
 
         Scanner kb = new Scanner(System.in);
 
-        File file = new File(medium);//change this to try different files
+        File file = new File(large);//change this to try different files
         Scanner inputFile = new Scanner(file);
         
         LinkedList dataList = new LinkedList();

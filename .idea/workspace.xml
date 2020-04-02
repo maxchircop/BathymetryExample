@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="254dc2e7-5a88-4a50-89d1-676c385114ec" name="Default Changelist" comment="Added a file that might be useful for optimization">
+    <list default="true" id="254dc2e7-5a88-4a50-89d1-676c385114ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Large/GEBCO_2019_Grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_174bytes/GEBCO_2019_Grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Large/Terms_of_Use.html" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_174bytes/Terms_of_Use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Large/gebco_2019_n27.0_s25.0_w-22.0_e-20.0.asc" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_4mb/gebco_2019_n27.0_s25.0_w-22.0_e-20.0.asc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Large/gebco_2019_n27.0_s25.0_w-22.0_e-20.0.asc.aux.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_4mb/gebco_2019_n27.0_s25.0_w-22.0_e-20.0.asc.aux.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Large/gebco_2019_n27.0_s25.0_w-22.0_e-20.0.prj" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_4mb/gebco_2019_n27.0_s25.0_w-22.0_e-20.0.prj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Medium/GEBCO_2019_Grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_4mb/GEBCO_2019_Grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Medium/Terms_of_Use.html" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_4mb/Terms_of_Use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Medium/gebco_2019_n26.0_s25.0_w-22.0_e-21.0.asc" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_980kb/gebco_2019_n26.0_s25.0_w-22.0_e-21.0.asc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Medium/gebco_2019_n26.0_s25.0_w-22.0_e-21.0.asc.aux.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_980kb/gebco_2019_n26.0_s25.0_w-22.0_e-21.0.asc.aux.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Medium/gebco_2019_n26.0_s25.0_w-22.0_e-21.0.prj" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_980kb/gebco_2019_n26.0_s25.0_w-22.0_e-21.0.prj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Small/GEBCO_2019_Grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_980kb/GEBCO_2019_Grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Small/Terms_of_Use.html" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_980kb/Terms_of_Use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Small/gebco_2019_n40.005_s40.0_w-57.22_e-57.215.asc" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_174bytes/gebco_2019_n40.005_s40.0_w-57.22_e-57.215.asc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Small/gebco_2019_n40.005_s40.0_w-57.22_e-57.215.asc.aux.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_174bytes/gebco_2019_n40.005_s40.0_w-57.22_e-57.215.asc.aux.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GEBCO_Small/gebco_2019_n40.005_s40.0_w-57.22_e-57.215.prj" beforeDir="false" afterPath="$PROJECT_DIR$/GEBCO_174bytes/gebco_2019_n40.005_s40.0_w-57.22_e-57.215.prj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BathyTest/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BathyTest/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BathyTest/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BathyTest/LinkedList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BathyTest/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BathyTest/ReadFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,34 +83,46 @@
       <option name="project" value="LOCAL" />
       <updated>1585664137367</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed wording and added another test file to see how long processing takes">
+      <created>1585682436494</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585682436494</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added a file that might be useful for optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a file that might be useful for optimization" />
+    <MESSAGE value="Changed wording and added another test file to see how long processing takes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed wording and added another test file to see how long processing takes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="264" y="23" key="CommitChangelistDialog2" timestamp="1585664142685">
+    <state x="453" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1585842932235">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state x="264" y="23" key="CommitChangelistDialog2/0.23.1280.732@0.23.1280.732" timestamp="1585664142685" />
-    <state width="783" height="442" key="GridCell.Tab.0.bottom" timestamp="1585682325670">
+    <state x="453" y="97" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1585842932235" />
+    <state x="264" y="23" key="CommitChangelistDialog2" timestamp="1585682435944">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="783" height="442" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1585682325670" />
-    <state width="783" height="442" key="GridCell.Tab.0.center" timestamp="1585682325669">
+    <state x="264" y="23" key="CommitChangelistDialog2/0.23.1280.732@0.23.1280.732" timestamp="1585682435944" />
+    <state width="783" height="442" key="GridCell.Tab.0.bottom" timestamp="1585847651476">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="783" height="442" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1585682325669" />
-    <state width="783" height="442" key="GridCell.Tab.0.left" timestamp="1585682325668">
+    <state width="783" height="442" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1585847651476" />
+    <state width="783" height="442" key="GridCell.Tab.0.center" timestamp="1585847651475">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="783" height="442" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1585682325668" />
-    <state width="783" height="442" key="GridCell.Tab.0.right" timestamp="1585682325669">
+    <state width="783" height="442" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1585847651475" />
+    <state width="783" height="442" key="GridCell.Tab.0.left" timestamp="1585847651474">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="783" height="442" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1585682325669" />
+    <state width="783" height="442" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1585847651474" />
+    <state width="783" height="442" key="GridCell.Tab.0.right" timestamp="1585847651475">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state width="783" height="442" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1585847651475" />
     <state width="1238" height="227" key="GridCell.Tab.1.bottom" timestamp="1585587483961">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
@@ -145,14 +139,14 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state width="1238" height="227" key="GridCell.Tab.1.right/0.23.1280.732@0.23.1280.732" timestamp="1585587483961" />
-    <state x="240" y="129" key="Vcs.Push.Dialog.v2" timestamp="1585664152408">
+    <state x="240" y="129" key="Vcs.Push.Dialog.v2" timestamp="1585682440480">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state x="240" y="129" key="Vcs.Push.Dialog.v2/0.23.1280.732@0.23.1280.732" timestamp="1585664152408" />
-    <state x="317" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1585668399645">
+    <state x="240" y="129" key="Vcs.Push.Dialog.v2/0.23.1280.732@0.23.1280.732" timestamp="1585682440480" />
+    <state x="317" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1585828683852">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state x="317" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1585668399645" />
+    <state x="317" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1585828683852" />
     <state x="423" y="313" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585663907030">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
@@ -161,6 +155,10 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="298" y="146" width="683" height="486" key="find.popup/0.23.1280.732@0.23.1280.732" timestamp="1585661694796" />
+    <state x="17" y="23" key="new project wizard" timestamp="1585829895826">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="17" y="23" key="new project wizard/0.23.1280.732@0.23.1280.732" timestamp="1585829895826" />
     <state x="305" y="79" width="670" height="676" key="search.everywhere.popup" timestamp="1585658929831">
       <screen x="0" y="23" width="1280" height="732" />
     </state>

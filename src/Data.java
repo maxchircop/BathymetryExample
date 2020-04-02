@@ -17,4 +17,28 @@ public class Data {
     public String toString(){
         return "Latitude "+latitude+" & longitude "+longitude+" has a depth of "+depth+" meters";
     }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public double getDepth() {
+        return depth;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+    public void setDepth(double depth) {
+        this.depth = depth;
+    }
 }

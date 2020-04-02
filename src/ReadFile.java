@@ -1,17 +1,11 @@
 /**
  * Created by Maximilian Chircop.
  * Date: 03/30/2020
- * Brief: Program that reads in files of generic types
+ * Brief: Program processes GEBCO data
  */
 
-import javax.print.attribute.standard.DateTimeAtCompleted;
 import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
-
 
 public class ReadFile {
     public static void main(String[] args) throws FileNotFoundException {
@@ -21,11 +15,12 @@ public class ReadFile {
         String large = "GEBCO_4mb/gebco_2019_n27.0_s25.0_w-22.0_e-20.0.asc";
         String extraLarge = "GEBCO_24mb/gebco_2019_n20.0_s15.0_w135.0_e140.0.asc";
         String extraExtraLarge = "GEBCO_885mb/gebco_2019_n90.0_s-90.0_w-45.0_e-40.0.asc";
+        String comparison = "GEBCO_Comparison/gebco_2019_n30.0_s25.0_w130.0_e135.0.asc";
 
         Scanner kb = new Scanner(System.in);
 
         System.out.println("Choose a data set");
-        System.out.println("1-174 bytes\n2-980 kb\n3-4 mb\n4-24 mb\n5-885 mb");
+        System.out.println("1-174 bytes\n2-980 kb\n3-4 mb\n4-24 mb\n5-885 mb\n6-Comparison");
         String chosenFile = null;
         int option = kb.nextInt();
 
@@ -44,11 +39,27 @@ public class ReadFile {
         else if(option==5){
             chosenFile=extraExtraLarge;
         }
+        else if(option==6){
+            chosenFile=comparison;
+
+        }
         else{
 
         }
 
+        double returnLatitude = 0;
+        double returnLongitude = 0;
+        double returnDepth = 0;
+        System.out.println("Enter a Latitude");
+        double enteredLatitude = kb.nextDouble();
+        System.out.println("Enter a Longitude");
+        double enteredLongitude = kb.nextDouble();
+
+
         System.out.println("Processing...");
+
+
+        //make here down its own method.... but that's a future problem
 
         File file = new File(chosenFile);//change this to try different files
         Scanner inputFile = new Scanner(file);
@@ -56,19 +67,18 @@ public class ReadFile {
         LinkedList dataList = new LinkedList();
 
         Data data;
-        double latitude = -22; // starting xcorner, currently set to file medium
-        double longitude = 25;// starting ycorner, currently set to file medium
+
+        double latitude = 25; // starting xcorner, currently set to file medium
+        double longitude = -22;// starting ycorner, currently set to file medium
         double cellSize = 0.004166666667 ;
         double depth=0; //initializing
 
-        int gridCount=0;
         inputFile.nextLine();
         inputFile.nextLine();
         inputFile.nextLine();
         inputFile.nextLine();
         inputFile.nextLine();
         inputFile.nextLine();
-
 
         while (inputFile.hasNext()) {
             depth = inputFile.nextDouble();
@@ -77,38 +87,29 @@ public class ReadFile {
             dataList.add(data);
             latitude += cellSize;
             longitude += cellSize;
+            if(latitude < enteredLatitude){
+                returnLatitude=latitude;
+                returnDepth=depth;
+            }
+            if(latitude > enteredLatitude){
+                returnLatitude=latitude;
+            }
         }
 
         inputFile.close();
 
-        dataList.enumerate(); // is currently printing backwards
+        System.out.println(returnDepth);
 
-        /**
-        try {
-            File inputFile = new File(medium);
-            Scanner fileReader = new Scanner(inputFile);
 
-            if (inputFile.exists()) {
-                System.out.println("File name: " + inputFile.getName());
-                System.out.println("Absolute path: " + inputFile.getAbsolutePath());
-                System.out.println("Writeable: " + inputFile.canWrite());
-                System.out.println("Readable " + inputFile.canRead());
-                System.out.println("File size in bytes " + inputFile.length());
-            } else {
-                System.out.println("The file does not exist.");
-            }
-            System.out.println("File contents:\n\n");
-
-            while (fileReader.hasNextLine()) {
-                String data = fileReader.nextLine();
-                System.out.println(data);
-            }
-
-        }
-        catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }*/
+        //dataList.enumerate(); // is currently printing backwards
 
     }// end of main
+
+    public String findDepth(double lat, double lon,LinkedList list){
+        Data data = new Data(0, 0, 0);
+        for (int i = 0; i < list.size(); i++) {
+        }
+
+        return "";
+    }
 }
